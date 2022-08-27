@@ -67,7 +67,7 @@ header{
 }
 
 .navbar a::after{
-    content: "";
+    content: '';
     width: 0;
     height: 2px;
     background: var(--main-color);
@@ -286,7 +286,7 @@ header{
     border-radius: 10px;
 }
 .skills{
-    width: 500px;
+    width: 30rem;
     margin: 60px;
     color: var(--bg-color);
     padding: 20px;
@@ -302,7 +302,7 @@ header{
 .bar{
     background-color: var(--text-color);
     display: block;
-    height: 20px;
+    height: 1.25rem;
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     overflow: hidden;
@@ -315,7 +315,7 @@ header{
 }
 
 .bar span{
-    height: 20px;
+    height: 1.25rem;
     float: left;
     background: linear-gradient(135deg, #A9D9D0 0%, #038C7F 100%);
 }
@@ -382,7 +382,7 @@ header{
 
 .about-image .image-box{
     background-color: rgba(255, 255, 255, 0.20);
-    max-width: 430px;
+    max-width: 26.875rem;
     border: 1px solid rgba(255, 255, 255, 0.40);
     margin: auto;
     border-radius: 10px;
@@ -399,8 +399,6 @@ header{
 .about-text{
     width: 50%;
     padding: 0 15px;
-
-
 }
 
 .about-text p{
@@ -410,4 +408,16 @@ header{
 .about-text p span{
     font-style:bolder;
     font-weight: 700;
+}
+
+@media only screen and (max-width: 768px){
+    .skills{
+        width: 20rem;
+    }
+    .bar{
+        height: 0.5rem;
+    }
+    .skills li{
+        padding: 0.5px;
+    }
 }
