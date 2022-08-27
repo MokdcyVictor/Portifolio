@@ -150,7 +150,7 @@ header{
     align-content: center;
     content: '';
     display: block;
-    width: 7rem;
+    width: 15rem;
     height: 0.3rem;
     background-color: var(--main-color);
     margin: 0 auto;
@@ -260,4 +260,154 @@ header{
         position: absolute;
         top: -30px;
     }
+}
+
+.about h1{
+    text-align: center;
+}
+.about h3{
+    margin: 5px;
+}
+
+.logo-about{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.about .logo-about::after{
+    align-content: center;
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: var(--main-color);
+    margin: 0 auto;
+    position: relative;
+    border-radius: 10px;
+}
+.skills{
+    width: 500px;
+    margin: 60px;
+    color: var(--bg-color);
+    padding: 20px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+
+.skills li{
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.bar{
+    background-color: var(--text-color);
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 0.1);
+}
+
+.bar:hover{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.bar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, #A9D9D0 0%, #038C7F 100%);
+}
+
+.html{
+    width: 90%;
+    animation: html 3s;
+}
+
+.css{
+    width: 50%;
+    animation: css 3s;
+}
+
+.javascript{
+    width: 10%;
+    animation: javascript 3s;
+}
+
+.sql{
+    width: 25%;
+    animation: sql 3s;
+}
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 50%;
+    }
+}
+
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 10%;
+    }
+}
+
+@keyframes sql{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 25%;
+    }
+}
+
+.about-image .image-box{
+    background-color: rgba(255, 255, 255, 0.20);
+    max-width: 430px;
+    border: 1px solid rgba(255, 255, 255, 0.40);
+    margin: auto;
+    border-radius: 10px;
+}
+.about-image .image-box img{
+    width: 99%;
+}
+
+.about-image{
+    width: 50%;
+    padding: 0 15px;
+}
+
+.about-text{
+    width: 50%;
+    padding: 0 15px;
+
+
+}
+
+.about-text p{
+    padding-left: 60px;
+}
+
+.about-text p span{
+    font-style:bolder;
+    font-weight: 700;
 }
